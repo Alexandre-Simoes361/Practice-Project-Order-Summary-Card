@@ -59,9 +59,12 @@ body{
     min-width: 100svw;
     min-height: 100svh;
     margin: 0px;
-    overflow: hidden;
-    background-color: var(--clr-primary-200);
     font-family: var(--ff-base);
+    overflow: hidden;
+    background: url(Images/pattern-background-mobile.svg) no-repeat center/cover;
+    position: relative;
+    background-position: right 0vw bottom 40vh;
+    background-color: var(--clr-primary-200);
 }
 
 .card{
@@ -178,6 +181,13 @@ button:hover{
 }
 
 @media (min-width: 700px){
+    body{
+        background: url(Images/pattern-background-desktop.svg) no-repeat center/cover;
+        position: relative;
+        background-position: right 0vw bottom 30vh;
+        background-color: var(--clr-primary-200);
+    }
+
     .card{
         width: 370px;
     }

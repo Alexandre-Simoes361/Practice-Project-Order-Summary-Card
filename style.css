@@ -13,11 +13,21 @@
     --fw--bold: 700;
     --fw--black: 900;
 
+    /*font sizes for mobile*/
+
     --fs--h1: 23px;
     --fs--p: 16px;
     --fs--h2: 15px;
     --fs--pln: 14px;
     --fs--plnchng: 14px;
+
+    /*font sizes for desktop*/
+
+    --fs--dh1: 23px;
+    --fs--dp: 14px;
+    --fs--dh2: 12px;
+    --fs--dpln: 13px;
+    --fs--dplnchng: 11px;
 }
 
 *{
@@ -48,17 +58,10 @@ body{
     align-items: center;
     min-width: 100vw;
     min-height: 100vh;
+    margin: 0px;
     overflow: hidden;
     background-color: var(--clr-primary-200);
     font-family: var(--ff-base);
-}
-
-.wrapper{
-    overflow: hidden;
-}
-
-main{
-    overflow: hidden;
 }
 
 .card{
@@ -174,5 +177,43 @@ button:hover{
     color: var(--clr-neutral-600);
 }
 
+@media (min-width: 700px){
+    .card{
+        width: 370px;
+    }
 
+    .plan_area{
+        width: 295px;
+    }
 
+    .proceed{
+        width: 295px;
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .music_icon{
+        width: 40px;
+        height: 40px;
+    }
+    
+    * > h2{
+        font-size: var(--fs--dh2);
+    }
+
+    * > p{
+        font-size: var(--fs--dp);
+    }
+
+    .plan_type{
+        font-size: var(--fs--dpln);
+    }
+
+    .plan_cost{
+        font-size: var(--fs--dpln);
+    }
+
+    .plan_change > h2{
+        font-size: var(--fs--dplnchng);
+    }
+}

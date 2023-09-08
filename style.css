@@ -53,6 +53,10 @@ body{
     font-family: var(--ff-base);
 }
 
+.wrapper{
+    overflow: hidden;
+}
+
 main{
     overflow: hidden;
 }

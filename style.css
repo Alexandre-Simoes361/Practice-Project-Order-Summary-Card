@@ -48,17 +48,21 @@ body{
     align-items: center;
     min-width: 100vw;
     min-height: 100vh;
-    background-color: var(--clr-primary-200);
     overflow: hidden;
+    background-color: var(--clr-primary-200);
     font-family: var(--ff-base);
+}
+
+main{
+    overflow: hidden;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 340px;
-    height: 590px;
+    width: 320px;
+    height: 570px;
     background-color: var(--clr-primary-600);
     overflow: hidden;
     border-radius: 20px;
@@ -78,7 +82,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 40px 5px 40px;
+    margin: 20px 30px 5px 30px;
     line-height: 25px;
 }
 
@@ -95,17 +99,17 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 280px;
     height: 80px;
     background-color: var(--clr-neutral-200);
-    border-radius: 15px;
+    border-radius: 10px;
     margin-bottom: 30px;
 }
 
 .plan_details{
     display: flex;
     flex-direction: column;
-    margin: 0px 60px 0px 20px;
+    margin: 0px 40px 0px 20px;
 }
 
 .plan_type{
@@ -139,7 +143,7 @@ button:hover{
 }
 
 .proceed{
-    width: 300px;
+    width: 280px;
     height: 53px;
     border-radius: 12px;
     border: hidden;

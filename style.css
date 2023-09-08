@@ -24,7 +24,7 @@
     /*font sizes for desktop*/
 
     --fs--dh1: 23px;
-    --fs--dp: 14px;
+    --fs--dp: 13.5px;
     --fs--dh2: 12px;
     --fs--dpln: 13px;
     --fs--dplnchng: 11px;
@@ -56,8 +56,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 100svw;
+    min-height: 100svh;
     margin: 0px;
     overflow: hidden;
     background-color: var(--clr-primary-200);
@@ -203,6 +203,11 @@ button:hover{
 
     * > p{
         font-size: var(--fs--dp);
+    }
+
+    .summary_area{
+        margin: 25px 40px 5px 40px;
+        line-height: 20px;
     }
 
     .plan_type{
